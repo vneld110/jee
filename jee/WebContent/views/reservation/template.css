@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+@IMPORT url("father.css"); /* @import 로 상속, 다중 상속 가능. */
+.trClass {
+	border: 1px solid black; 
+	height: 50px;
+}
+
+.tdClass {
+	border: 1px solid black;
+	text-align: center;
+	background-color: #0275a6;
+	color: white;
+	width: 150px;
+}
+
+.tdClass2 {
+	border: 1px solid black;
+	text-align: center;
+}

@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+@IMPORT url("common.css"); /* reset.css를 상속받았으므로 common.css 상속받으면 됨. */
+
+article{
+	width: 100%;
+	min-height: 50%;
+	position: relative;
+	z-index: 10;
+	margin: -50px 0; /* 위아래 좌우 */
+	background-color: #FF6;
+}
+.content{
+	padding-top: 50px;
+}
