@@ -16,7 +16,7 @@
 	<p></p> <!-- paragragh 단락나눔 -->
 	<div>
 		<h3>이미지 태그(img)</h3>
-		<img src="../../images/Koala.jpg" alt="" style="width: 200px;"/>
+		<img src="<%=request.getContextPath()%>/images/Koala.jpg" alt="" style="width: 200px;"/>
 		<!-- 이미지는 width 값만 주어도 비율을 따져서 축소된다. -->
 	</div>
 </body>

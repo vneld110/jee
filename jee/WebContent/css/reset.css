@@ -87,7 +87,7 @@ option {
 }
  
 hr {
-    display: none /* 수평선.. 넣지 않겠다 */
+    /* display: none  수평선.. 넣지 않겠다 */
 }
  
 legend {

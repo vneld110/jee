@@ -6,13 +6,14 @@
 	<meta charset="UTF-8" />
 	<title>리스트 태그</title>
 	 <style>
-	 	@IMPORT url("listTag.css");
+	 	@IMPORT url("<%=request.getContextPath()%>/css/listTag.css");
 	 </style>
 </head> 
 <body>
 	<!-- ul>li*4 -->
 	<ul class="multi">
 		<li>&nbsp;&nbsp;리스트 스타일</li>
+		
 			<ul>
 				<li>리스트 스타일</li>
 					<ul>

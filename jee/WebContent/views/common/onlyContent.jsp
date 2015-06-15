@@ -7,7 +7,7 @@
 	<meta charset="UTF-8" />
 	<title>Only Content Frame</title>
 	<style>
-		@IMPORT url("onlyContent.css");
+		@IMPORT url("<%= request.getContextPath()%>/css/onlyContent.css");
 	</style>
 </head>
 <body> <%-- table>tr>td*3 +tab --%>

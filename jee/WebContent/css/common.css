@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
-@import url(reset.css);
+@import url("reset.css");
 header {
     width: 100%;
     height: 200px;
@@ -14,7 +14,7 @@ footer {
     position: relative;
     z-index: 20;
     overflow: hidden;
-    background-color: #CCF
+    /* background-color: #CCF */
 }
 nav ul {
     list-style:none;
