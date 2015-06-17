@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+div {
+	width: 99%;
+	margin: auto;
+	background-image: url("../images/divImg.jpg");
+}
+fieldset {
+	width: 50%;
+	margin: auto;
+	border-color: #92c7aa;
+	border-style: solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+/* 	background-image: url("../images/fieldsetImg.jpg"); */
+}
+legend {
+	font-size: 1.6em;
+	font-family: courier;
+	color: #c0c0c0;
+	text-align: center;
+}
+.reserveTable {
+	border: 1px solid black;
+	width: 800;
+	height: 500px;
+	margin: auto;
+}
+.reserveTable thead {
+	font: bold;
+	background-color: #e1b5b9;
+}
+p {
+	font-size: 1em;
+	font: bold;
+	text-align: center;
+}
+
+.tbodyOption select {
+	border: 0 !important;  
+	-webkit-appearance: none;  
+	-moz-appearance: none; 
+	/* background: #0088cc url(img/demo/select-arrow.png) no-repeat 90% center; */
+	width: 100px; 
+	text-indent: 0.01px; 
+	/* text-overflow: "";  */
+
+	color: #FFF;
+	border-radius: 15px;
+	padding: 5px;
+	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+	background-color: #808080;
+}
+.tbodyOption input {
+	background-color: aqua;
+}
+.tbodyOption select.theaterSelect {
+	
+}
+.tbodyOption select.timeSelect {
+	
+}
+.reserveTable thead tbody tr td select {
+	width: auto;
+	height: 100px
+}
