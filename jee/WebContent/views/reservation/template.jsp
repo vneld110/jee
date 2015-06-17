@@ -14,7 +14,7 @@
 <%-- 주석 --%>
 <!-- html주석 -->
 <% /* 주석 (ctrl+shift+/) */ %>
-	<form action="<%=request.getContextPath()%>/input">
+	<form action="<%=request.getContextPath()%>/reservation/input.do">
 
 		<table class="tableClass"> 
 		<% /* - css와 분리 
