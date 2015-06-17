@@ -8,14 +8,10 @@
 </head>
 <body>
 	<div>
-		ID = <%= request.getAttribute("ID") %> <br />	
-		Password = <%= request.getAttribute("Password") %> <br />	
-		생년월일 = <%= request.getAttribute("Birth") %> <br />	
-		상영중영화 = <%= request.getAttribute("Movie") %> <br />	
-		상영관 = <%= request.getAttribute("Theater") %> <br />	
-		날짜 = <%= request.getAttribute("Date") %> <br />	
-		시간 = <%= request.getAttribute("Time") %> <br />	
-		좌석수 = <%= request.getAttribute("Seat") %> <br />	
+		영화 = <%= request.getAttribute("movie") %> <br />	
+		상영관 = <%= request.getAttribute("theater") %> <br />	
+		날짜 = <%= request.getAttribute("date") %> <br />	
+		시간 = <%= request.getAttribute("time") %> <br />	
 	<p></p>
 	</div>
 	 
