@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+form {
+	margin: 0;
+}
+
+div.seatSelect {
+	width: 350px;
+	margin: 0;
+}
+div.deleteSelect {
+	width: 350px;
+	margin: 0;
+	padding-top: 0;
+}
+.valueView{
+	width: 200px;
+	border: 1px solid black;
+	
+}
+.seatView{
+	width: 600px;
+	margin-top: 0;
+	border: 1px solid black;
+}
+
+ol li {
+	display: inline;
+}

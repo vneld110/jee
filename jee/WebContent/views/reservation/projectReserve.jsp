@@ -6,12 +6,12 @@
 	<meta charset="UTF-8" />
 	<title>예매 페이지</title>
 	<style>
-		@IMPORT url("<%=request.getContextPath()%>/css/projectReservation.css");
+		@IMPORT url("<%=request.getContextPath()%>/css/reservation/projectReservation.css");
 	</style>
 </head>
 <body>
 	<div>
-	<form action="<%=request.getContextPath()%>/reservation/input.do">
+	<form action="<%=request.getContextPath()%>/reservation/reserveSeat.do">
 	<fieldset>
 		<legend> [RESERVATION] </legend>
 		<table class="reserveTable" summary="예매테이블">
@@ -60,8 +60,8 @@
 			</tr>
 		</tbody>
 	</table>
-	
 	<p>영화, 극장, 날짜, 시간을 선택하셨으면 >>> <input type="submit" value="좌석 선택" /></p>
+	
 	</fieldset>
 	</form>
 	</div>
