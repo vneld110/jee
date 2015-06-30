@@ -1,8 +1,12 @@
 package com.homepage.web.services;
 
-public interface MemberService {
-	public void join(String id, String password, String name, int age, String addr);
+import java.util.List;
+
+import com.homepage.web.beans.MemberBean;
+
+public interface MemberService{
+	public int join(MemberBean bean);
 	
 	public String login(String id, String password);
-
+	public List<MemberBean> getList();
 }

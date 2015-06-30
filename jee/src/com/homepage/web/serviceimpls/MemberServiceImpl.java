@@ -1,35 +1,31 @@
 package com.homepage.web.serviceimpls;
-
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
 import com.homepage.web.beans.MemberBean;
+import com.homepage.web.daos.MemberDAO;
 import com.homepage.web.services.MemberService;
 
 public class MemberServiceImpl implements MemberService{
-
+	/*
+	 * DAO가 싱글톤 패턴으로 단 하나의 인스턴스만 리턴한다면
+	 * 그것을 사용하는 서비스도 싱글톤으로 구성해야한다.
+	 * 그러지 않으면 다중 접속 상태에서 하나의 인스턴스만 사용하게되어
+	 * 접속불량 현상이 발생한다.
+	 */
+	private static MemberService service = new MemberServiceImpl();
+	
+	private MemberServiceImpl(){}
+	public static MemberServiceImpl getInstance(){
+		return (MemberServiceImpl) service;
+	}
 	MemberBean bean = new MemberBean();
 	Map<String,Object> map = new HashMap<String,Object>();
 	
-	public MemberServiceImpl() {
-	
-	}
-	
 	@Override
-	public void join(String id, String password, String name, int age,
-			String addr) {
-	
-		bean.setAddr(addr);
-		bean.setAge(age);
-		bean.setId(id);
-		bean.setName(name);
-		bean.setPassword(password);
-	
-		map.put("id", bean.getId());
-		map.put("password", bean.getPassword());
-		map.put("name", bean.getName());
-		map.put("age", String.valueOf(bean.getAge()));
-		map.put("addr", bean.getAddr());
-		
+	public int join(MemberBean bean) {
+		return MemberDAO.getInstance().join(bean);
 	}
 	/*
 	 * 회원가입 후 로그인 기능을 하는 메소드이후에
@@ -48,6 +44,10 @@ public class MemberServiceImpl implements MemberService{
 		}else {
 			return msg = "입력하신 ID 는 존재하지 않거나, 일치하지 않습니다. 다시 입력해 주세요.";
 		}
-		
+	}
+	@Override
+	public List<MemberBean> getList() {
+		MemberDAO dao = MemberDAO.getInstance();
+		return dao.getList();
 	}
 }
